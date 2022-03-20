@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="add">+</string>
+    <string name="substract">-</string>
+    <string name="divide">÷</string>
+    <string name="multiply">×</string>
+    <string name="equal">=</string>
+    <string name="clear">C</string>
+    <string name="result">Wynik:</string>
+    <string name="operation">Działanie:</string>
+    
+    <string-array name="numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+</resources>

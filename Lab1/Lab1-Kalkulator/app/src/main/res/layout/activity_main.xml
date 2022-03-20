@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="42dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/labelResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/result" />
+
+            <TextView
+                android:id="@+id/viewResult"
+                android:layout_width="368dp"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinnerNumber1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription=""
+            android:minHeight="48dp"
+            android:entries="@array/numbers" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/labelOperation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/spinnerNumber2"
+                android:text="@string/operation" />
+
+            <TextView
+                android:id="@+id/viewOperation"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinnerNumber2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription=""
+            android:minHeight="48dp"
+            android:entries="@array/numbers" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:onClick="operationBtnOnClick"
+                android:text="@string/add" />
+
+            <Button
+                android:id="@+id/btnSubstract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:onClick="operationBtnOnClick"
+                android:text="@string/substract" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDivide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:onClick="operationBtnOnClick"
+                android:text="@string/divide" />
+
+            <Button
+                android:id="@+id/btnMultiply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:onClick="operationBtnOnClick"
+                android:text="@string/multiply" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnEqual"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="30dp"
+                android:onClick="equalBtnOnClick"
+                android:text="@string/equal" />
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:onClick="clearBtnOnClick"
+                android:text="@string/clear" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lab2-app</string>
+    <string name="mainTitle">Lab2</string>
+    <string name="mainSubTitle">Aktywności i intencje</string>
+    <string name="btnCreateMessageActivity">Aktywność wysyłania wiadomości</string>
+    <string name="btnCalculateBMIActivity">Aktywność z liczeniem BMI</string>
+    <string name="hintName">Wpisz swoje imie</string>
+    <string name="hintHeight">Wpisz swój wzrost w m</string>
+    <string name="hintWeight">Wpisz swoją wagę w kg</string>
+    <string name="BMITitle">Kalkulator BMI</string>
+    <string name="height">Wzrost</string>
+    <string name="weight">Waga</string>
+    <string name="result">Wynik</string>
+</resources>

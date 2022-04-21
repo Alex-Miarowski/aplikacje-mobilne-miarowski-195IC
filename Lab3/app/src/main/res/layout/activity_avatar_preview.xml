@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AvatarPreviewActivity"
+    android:background="#399CA8">
+
+    <ImageView
+        android:id="@+id/imageViewAvatarBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/background_pineapple" />
+
+    <ImageView
+        android:id="@+id/imageViewAvatarWeapon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <ImageView
+        android:id="@+id/imageViewAvatarBase"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <ImageView
+        android:id="@+id/imageViewAvatarHat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <CheckBox
+        android:id="@+id/checkBoxBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:onClick="changeBackground"
+        android:padding="20dp"
+        android:text="@string/background_exist"
+        android:textSize="@dimen/text_size_big" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:text="@string/home"
+        android:onClick="goHome"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewYourAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/label_your_avatar"
+            android:textSize="@dimen/text_size_title" />
+
+        <TextView
+            android:id="@+id/textViewLabelClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/label_class"
+            android:textSize="@dimen/text_size_big" />
+
+        <TextView
+            android:id="@+id/textViewChosenClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text=""
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/text_size_big"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+</FrameLayout>

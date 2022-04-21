@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#399CA8"
+        tools:context=".MainActivity"
+        tools:ignore="UseSwitchCompatOrMaterialXml">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="293dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="36dp"
+            android:gravity="center"
+            android:text="@string/app_title"
+            android:textColor="#191818"
+            android:textSize="@dimen/text_size_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewAppEdition"
+            android:layout_width="160dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="@dimen/object_in_section_margin_top"
+            android:gravity="center"
+            android:text="@string/app_edition_name"
+            android:textColor="#FFEB3B"
+            android:textSize="@dimen/text_size_big"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+        <TextView
+            android:id="@+id/textViewDefaultClass"
+            android:layout_width="181dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="@dimen/object_out_section_margin_top"
+            android:gravity="center"
+            android:text="@string/label_use_default_class"
+            android:textSize="@dimen/text_size_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAppEdition" />
+
+        <Spinner
+            android:id="@+id/spinnerChooseDefaultClass"
+            android:layout_width="237dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="@dimen/object_in_section_margin_top"
+            android:entries="@array/classes"
+            android:textSize="@dimen/text_size_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDefaultClass" />
+
+        <EditText
+            android:id="@+id/EditTextOwnClassName"
+            android:layout_width="337dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="@dimen/object_in_section_margin_top"
+            android:hint="@string/hint_own_class"
+            android:textSize="@dimen/text_size_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switchDefaultOrOwnClass">
+        </EditText>
+
+        <TextView
+            android:id="@+id/textViewWearHat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/object_out_section_margin_top"
+            android:text="@string/label_wear_hat"
+            android:textSize="@dimen/text_size_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.133"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EditTextOwnClassName" />
+
+        <Spinner
+            android:id="@+id/spinnerChooseHat"
+            android:layout_width="237dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="@dimen/object_in_section_margin_top"
+            android:entries="@array/classes"
+            android:textSize="@dimen/text_size_default"
+            app:layout_constraintEnd_toEndOf="@+id/textViewWearHat"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toStartOf="@+id/textViewWearHat"
+            app:layout_constraintTop_toBottomOf="@+id/textViewWearHat" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupHat"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="@dimen/object_in_section_margin_top"
+            android:layout_marginEnd="240dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerChooseHat">
+
+            <RadioButton
+                android:id="@+id/radioButtonPutOnHat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/put_on"
+                android:textSize="@dimen/text_size_default" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTakeOffHat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/take_off"
+                android:textSize="@dimen/text_size_default" />
+        </RadioGroup>
+
+        <Switch
+            android:id="@+id/switchDefaultOrOwnClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/object_out_section_margin_top"
+            android:text="@string/label_create_own_class"
+            android:textSize="@dimen/text_size_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerChooseDefaultClass" />
+
+        <TextView
+            android:id="@+id/textViewWearWeapon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/object_out_section_margin_top"
+            android:text="@string/label_wear_weapon"
+            android:textSize="@dimen/text_size_default"
+            app:layout_constraintEnd_toEndOf="@+id/textViewWearHat"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textViewWearHat"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupHat" />
+
+        <Spinner
+            android:id="@+id/spinnerChooseWeapon"
+            android:layout_width="237dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="@dimen/object_in_section_margin_top"
+            android:entries="@array/classes"
+            app:layout_constraintEnd_toEndOf="@+id/textViewWearWeapon"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textViewWearWeapon"
+            app:layout_constraintTop_toBottomOf="@+id/textViewWearWeapon" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupWeapon"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="@dimen/object_in_section_margin_top"
+            android:layout_marginEnd="240dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerChooseWeapon">
+
+            <RadioButton
+                android:id="@+id/radioButtonPutOnWeapon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/put_on"
+                android:textSize="@dimen/text_size_default" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTakeOffWeapon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/take_off"
+                android:textSize="@dimen/text_size_default" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonToAvatarPreview"
+            android:layout_width="221dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="@dimen/object_in_section_margin_top"
+            android:drawableRight="@drawable/gary"
+            android:onClick="goToAvatarPreview"
+            android:text="@string/btn_create"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupWeapon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

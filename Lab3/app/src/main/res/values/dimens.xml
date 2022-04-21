@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="object_in_section_margin_top">20dp</dimen>
+    <dimen name="object_out_section_margin_top">60dp</dimen>
+    <dimen name="text_size_default">16sp</dimen>
+    <dimen name="text_size_big">24sp</dimen>
+    <dimen name="text_size_title">34sp</dimen>
+</resources>

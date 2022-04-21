@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">AvatarCreator</string>
+    <string name="app_title">AVATAR CREATOR</string>
+    <string name="app_edition_name">sponge edition</string>
+    <string name="label_use_default_class">Użyj klas domyślnych:</string>
+    <string name="label_create_own_class">Stwórz własną klasę:</string>
+    <string name="hint_own_class">Wpisz nazwę klasy</string>
+    <string name="label_wear_hat">Występowanie czapki:</string>
+    <string name="put_on">Załóż</string>
+    <string name="take_off">Zdejmij</string>
+    <string name="label_wear_weapon">Występowanie broni:</string>
+    <string-array name="classes">
+        <item>Wojownik</item>
+        <item>Mag</item>
+        <item>Łucznik</item>
+    </string-array>
+    <string name="label_your_avatar">Twój Avatar</string>
+    <string name="label_class">Klasa:</string>
+    <string name="background_exist">Występowanie tła</string>
+    <string name="btn_create">Stwórz Avatara!</string>
+    <string name="home">Home</string>
+</resources>

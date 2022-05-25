@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">F1GrandPrix</string>
+    <string name="details_button">Pokaż szczegóły</string>
+    <string name="grandprix_title">Tytuł Grand Prix</string>
+    <string name="grandprix_description">Opis Grand Prix</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

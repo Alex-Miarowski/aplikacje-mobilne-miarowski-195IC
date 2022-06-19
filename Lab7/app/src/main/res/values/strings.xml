@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">F1Calendar</string>
+    <string name="grandprix_activity_name">Grand Prix</string>
+    <string name="team_activity_name">Zespoły</string>
+    <string name="info_activity_name">Informacja o aplikacji</string>
+    <string name="title_info">Informacja</string>
+    <string name="app_logo">Logo aplikacji</string>
+    <string-array name="options">
+        <item>Zespoły</item>
+        <item>Grand Prix</item>
+    </string-array>
+    <string name="text_info">Aplikacja F1 Calendar szczątkowo pokazuje informacje na temat harmonogramu wyścigów F1. Znaleźć tu można informacje dotyczące nadchodzących Grand Prix oraz miejscach, w których się odbędą. Dodatkowo w zakładce zespoły widnieją informacje o zespołach biorących udział w aktualnym sezonie.</string>
+</resources>

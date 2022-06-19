@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#53565A"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include
+        layout="@layout/toolbar_main"
+        android:id="@+id/toolbar"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:contentDescription="@string/app_logo"
+        android:src="@drawable/app_logo"
+        tools:ignore="ImageContrastCheck" />
+
+    <ListView
+        android:id="@+id/list_options"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:entries="@array/options" />
+</LinearLayout>

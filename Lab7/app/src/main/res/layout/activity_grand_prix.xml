@@ -68,4 +68,10 @@
         android:gravity="center"
         android:textSize="@dimen/text_size_normal" />
 
+    <CheckBox android:id="@+id/finished"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/finished"
+        android:onClick="onFinishedClicker" />
+
 </LinearLayout>

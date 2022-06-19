@@ -10,4 +10,6 @@
         <item>Grand Prix</item>
     </string-array>
     <string name="text_info">Aplikacja F1 Calendar szczątkowo pokazuje informacje na temat harmonogramu wyścigów F1. Znaleźć tu można informacje dotyczące nadchodzących Grand Prix oraz miejscach, w których się odbędą. Dodatkowo w zakładce zespoły widnieją informacje o zespołach biorących udział w aktualnym sezonie.</string>
+    <string name="finished">Skończony wyścig</string>
+    <string name="finished_races">Skończone wyścigi:</string>
 </resources>

@@ -9,7 +9,7 @@
     - pamiętaj o parametrach Params, Progress oraz Results klasy AsyncTask,
 
 ## _Opis:_
-Zmodyfikowana aplikacja z Lab7. Użytkownik dodatkowo po wejściu w konkretne Grand Prix ma możliwość kliknięcia checkboxa informującego, że wyścig się już odbył. W głównej aktywności znajduje się lista nazw Grand Prix, które się już odbyły. Po kliknięciu na konkretny użytkownik przechodzi bezpośrednio do szczegółów wyścigu.
+Zmodyfikowana aplikacja z Lab6. Użytkownik dodatkowo po wejściu w konkretne Grand Prix ma możliwość kliknięcia checkboxa informującego, że wyścig się już odbył. W głównej aktywności znajduje się lista nazw Grand Prix, które się już odbyły. Po kliknięciu na konkretny użytkownik przechodzi bezpośrednio do szczegółów wyścigu.
 
 ## _Widok główny:_
 ![](assets/screenshots/screen1.png)
